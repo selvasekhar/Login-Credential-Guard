@@ -1,0 +1,49 @@
+<app-alert  [alertType]="'success'" [message]="'show the message'"></app-alert>
+
+<table class="table table-striped" border="1">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>      <ul>@for(item of categories; track $index){
+<li>{{item.userId}}</li>
+<li>{{item.id}}</li>
+<li>{{item.title}}</li>
+<li>{{item.completed}}</li>
+}
+    </ul></td>
+        <td>    <ul>@for(items of productseer; track $index){
+<li>{{items.albumId}}</li>
+<li>{{items.id}}</li>
+<li>{{items.title}}</li>
+<li>{{items.url}}</li>
+<li>{{items.thumbnailUrl}}</li>
+}
+    </ul>
+</td>
+<td>
+    <ul>@for(items of productsfinal; track $index){
+<li>{{items.albumId}}</li>
+<li>{{items.id}}</li>
+<li>{{items.title}}</li>
+<li>{{items.url}}</li>
+<li>{{items.thumbnailUrl}}</li>
+<li>{{items.userId}}</li>
+<li>{{items.id}}</li>
+<li>{{items.title}}</li>
+<li>{{items.completed}}</li>
+}</ul>
+</td>
+
+        </tr></tbody></table>
+
+
+
+
+
+
+
